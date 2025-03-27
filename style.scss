@@ -1,0 +1,72 @@
+// Definindo variáveis no scss
+$whidth-rem: 3.5rem;
+$width-px: 300px;
+$width: 300;
+
+// Ex
+aside {
+    width: $width-px;
+}
+    
+
+body{
+    background-color: #ccc;
+}
+
+h1 {
+    color: aqua;
+}
+
+p{
+    font-size: medium;
+}
+
+nav {
+    width: 100%;
+    background: #000;
+    ul {
+        list-style: none;
+    }
+    li {
+        color: #ccc;
+        display: inline-block;
+    }
+}
+
+nav {
+    font: {
+        family: "Times New Roman", Times, serif;
+        style: italic;
+        size: 30px;
+        weight: bold;
+    }
+}
+
+//Pseudo classe
+
+a {
+        color: #ffa;
+    &:hover {
+        color: #faf;
+    }
+}
+
+// MAPs
+// Atribuindo chave($social) e valores 
+$social: (
+ facebook: #3b5998,
+ flickr: #0063db,
+ github: #4183c4,
+ googleplus: #dd4b39,
+ instagram: #517fa4,
+ linkedin: #007bb6,
+ pinterest: #cb2027,
+ soundcloud: #f60,
+ twitter: #00aced,
+ youtube: #b00
+);
+
+// Chamando map
+h2 {
+    color: map-get($social, youtube );
+}
