@@ -30,3 +30,6 @@ a {
 ```
 
 ## Maps
+
+### Lembrente
+Fazer os exercícios da aula que esrão no portal do aluno
